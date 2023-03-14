@@ -25,7 +25,8 @@ app.get("/", (req, res) => {
     res.send("bonjour");
 });
 app.listen(process.env.PORT, () => {
-    console.log(`Server is listening on : http://localhost:${process.env.PORT}`);
+    console.log(`Server
+     is listening on : http://localhost:${process.env.PORT}`);
 });
 const categorieRouter =require("./routes/categorie.route") 
 app.use('/api/categories', categorieRouter);
